@@ -1,4 +1,4 @@
-FROM dcan-software
+FROM dcanlabs/external-software
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
         python2.7 \
