@@ -5,12 +5,15 @@ for this container. It is meant to be used to build the next level of any DCAN
 pipeline.
 
 
-## Installation
+## Building Docker Image
 In order to build this container, you will need to have already built the
 external-software docker image.
 
+Edit Dockerfile with the releases of the internal tools you want to use. When
+you push your changes to the Dockerfile, DockerHub will re-build the image.
 
-## Using Docker
+
+## Using Docker Image
 Before running, you will need to load the image onto your Docker service by
 running the following command:
 ```
