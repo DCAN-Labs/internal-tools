@@ -10,7 +10,7 @@ RUN pip2 install pyyaml numpy pillow
 RUN mkdir /opt/dcan-tools
 WORKDIR /opt/dcan-tools
 # dcan bold processing
-RUN git clone -b v4.0.0 --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc
+RUN git clone -b v4.0.2 --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc
 # dcan executive summary
 RUN git clone -b v2.2.1 --single-branch --depth 1 https://github.com/DCAN-Labs/ExecutiveSummary.git executivesummary
 RUN gunzip /opt/dcan-tools/executivesummary/templates/parasagittal_Tx_169_template.scene.gz
