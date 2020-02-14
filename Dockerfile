@@ -15,6 +15,7 @@ RUN git clone -b v4.0.3 --single-branch --depth 1 https://github.com/DCAN-Labs/d
 
 # dcan executive summary
 RUN git clone --branch feat/anat-only --single-branch --depth 1 https://github.com/DCAN-Labs/ExecutiveSummary.git executivesummary
+RUN git checkout 9fef1f1b0208aa98149549f763686f4a4cad6f01
 RUN gunzip /opt/dcan-tools/executivesummary/templates/parasagittal_Tx_169_template.scene.gz
 
 # dcan custom clean
