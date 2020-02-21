@@ -14,7 +14,7 @@ WORKDIR /opt/dcan-tools
 RUN git clone -b v4.0.3 --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc
 
 # dcan executive summary
-RUN git clone -b v2.2.4 --single-branch --depth 1 https://github.com/DCAN-Labs/ExecutiveSummary.git executivesummary
+RUN git clone -b develop --single-branch --depth 1 https://github.com/DCAN-Labs/ExecutiveSummary.git executivesummary
 RUN gunzip /opt/dcan-tools/executivesummary/templates/parasagittal_Tx_169_template.scene.gz
 
 # dcan custom clean
