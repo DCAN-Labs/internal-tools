@@ -12,6 +12,7 @@ WORKDIR /opt/dcan-tools
 
 # dcan bold processing
 #RUN git clone -b v4.0.6a --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc-
+ADD https://github.com/DCAN-Labs/dcan_bold_processing.git version.json
 RUN git clone -b develop --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc
 
 # dcan executive summary
