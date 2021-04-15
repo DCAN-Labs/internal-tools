@@ -1,4 +1,4 @@
-FROM dcanlabs/external-software:dev
+FROM dcanlabs/external-software:v.0.2
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
         python2.7 \
@@ -11,9 +11,8 @@ RUN mkdir /opt/dcan-tools
 WORKDIR /opt/dcan-tools
 
 # dcan bold processing
-#RUN git clone -b v4.0.6a --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc-
 ADD https://github.com/DCAN-Labs/dcan_bold_processing.git version.json
-RUN git clone -b develop --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc
+RUN git clone -b v4.0.6 --single-branch --depth 1 https://github.com/DCAN-Labs/dcan_bold_processing.git dcan_bold_proc
 
 # dcan executive summary
 RUN git clone -b v2.2.5 --single-branch --depth 1 https://github.com/DCAN-Labs/ExecutiveSummary.git executivesummary
