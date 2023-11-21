@@ -20,7 +20,7 @@ RUN git clone -b v2.2.10 --single-branch --depth 1 https://github.com/DCAN-Labs/
 RUN gunzip /opt/dcan-tools/executivesummary/templates/parasagittal_Tx_169_template.scene.gz
 
 # dcan custom clean
-RUN git clone -b v0.0.0 --single-branch --depth 1 https://github.com/DCAN-Labs/CustomClean.git customclean
+RUN git clone -b v2.0.3 --single-branch --depth 1 https://github.com/DCAN-Labs/CustomClean.git customclean
 
 # dcan file mapper
 RUN git clone -b v1.3.0 --single-branch --depth 1 https://github.com/DCAN-Labs/file-mapper.git filemapper
