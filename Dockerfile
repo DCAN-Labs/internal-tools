@@ -1,5 +1,5 @@
 
-FROM dcanumn/external-software:v0.0.5
+FROM dcanumn/external-software:85-hotfix-2
 
 RUN apt-get update && apt-get install -yq --no-install-recommends \
         python2.7 \
